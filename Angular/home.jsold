@@ -1,0 +1,26 @@
+
+(function(){
+     var app = angular.module('myApp', []);
+
+     app.directive("sideNavigation", function(){
+          return {
+               retrict: 'E',
+               templateUrl: "rg-sidenavigation.html"
+          }
+     });
+
+     app.directive("rgHeader", function(){
+          return {
+               retrict: 'E',
+               templateUrl: "rg-header.html"
+          }
+     });
+
+     app.directive("geoAccomplishment", function(){
+          return {
+               retrict: 'E',
+               templateUrl: "rg-geoAccomplishment.html"
+          }
+     });
+
+})();

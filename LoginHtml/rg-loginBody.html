@@ -1,0 +1,42 @@
+<!-- login body -->
+<div class="w3-row-padding">
+    <br>
+    <div class='w3-third'>
+        &nbsp
+    </div>
+    <div class='w3-third'>
+        &nbsp
+    </div>
+    <div class="w3-third w3-border w3-topbar w3-border-black w3-bottombar ">
+        <div class="w3-container" ng-controller="loginCtrl as lg">
+            <div class="w3-row w3-center w3-padding w3-bottombar w3-border-bottom w3-border-black">
+                <div class="w3-row w3-xlarge ">
+                    <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+                </div>
+                <div class="w3-row w3-margin-top">
+                    Please enter your account information
+                </div> 
+            </div>
+            <div class="w3-row w3-padding w3-bottombar w3-border-bottom w3-border-black">
+                <div class="w3-container w3-margin-top">
+                    <div class="w3-row w3-red w3-center">
+                        {{lg.errorMessage}}
+                    </div>
+                    <div class="w3-row"> 
+                        <label><b>Username</b></label>
+                        <input class="w3-input w3-border" type="text" ng-model="lg.username">
+                    </div>
+                    <div class="w3-row"> 
+                        <label><b>Password</b></label>
+                        <input class="w3-input w3-border" type="password" ng-model="lg.password">
+                    </div>
+                    <div class="w3-row w3-margin-top w3-margin-bottom">
+                        <button class="w3-button w3-block w3-grey w3-border" ng-click="lg.loginClick()">Log-in</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
